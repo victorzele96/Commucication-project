@@ -1,0 +1,85 @@
+﻿@model cinema.Models.registrationModel
+@{
+    Layout = null;
+    ViewBag.Title = "registration";
+}
+
+<!DOCTYPE html>
+
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="~/css/registrationStyle.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <h1 class="title-agile text-center">Register </h1>
+    <div class="content-w3ls">
+        <div class="content-bottom">
+            <h2>Register Here <i class="fa fa-hand-o-down" aria-hidden="true"></i></h2>
+            <form action="saveDetails" method="post">
+
+                <div class="field-group">
+                    <span class="fa fa-first-name" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="FirstName" id="FirstNameid" type="text" value="" placeholder="First Name" required/> @Html.ValidationMessageFor(x => x.FirstName)
+                    </div>
+                </div>
+                
+                <div class="field-group">
+                    <span class="fa fa-first-name" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="LastName" id="LastNameid" type="text" value="" placeholder="Last Name" required> @Html.ValidationMessageFor(x => x.LastName)
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="Username" id="Usernameid" type="text" value="" placeholder="Username" required> @Html.ValidationMessageFor(x => x.Username)
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <span class="fa fa-envelope" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="Email" id="Emailid" type="email" value="" placeholder="Email" required> @Html.ValidationMessageFor(x => x.Email)
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <span class="fa fa-phone" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="UserNumber" id="UserNumberid" type="text" value="" placeholder="Contact Number" required> @Html.ValidationMessageFor(x => x.UserNumber)
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <span class="fa fa-lock" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="UserPassword" id="UserPasswordid" type="Password" placeholder="Password" required> @Html.ValidationMessageFor(x => x.UserPassword)
+                    </div>
+                </div>
+
+                <div class="wthree-field">
+                    <input id="saveForm" name="saveForm" type="submit" value="Register"/>
+                </div>
+                <div class="account">
+                    <p class="text-center">Already have an account ? <a href="~/main/login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
