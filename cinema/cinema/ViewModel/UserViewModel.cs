@@ -8,8 +8,8 @@ namespace cinema.ViewModel
 {
     public class UserViewModel
     {
-        public loginModel login { get; }
+        public registrationModel regModel { get; }
 
-        public List<loginModel> loginList { get; }
+        public List<registrationModel> regModelList { get; }
     }
 }

@@ -39,14 +39,16 @@ namespace cinema.Controllers
             return View("registration");
         }
 
-        public ActionResult Login(loginModel log)
-        {
+        public ActionResult userLogin(loginModel log)
+        {                           // should addd here tblAdmin and check if this user is admin (victor or arie)
             if (ModelState.IsValid)
             {
                 UserDal dal = new UserDal();
-                UserViewModel uvm = new UserViewModel();
-                List<loginModel> loginM = dal.Registration.ToList<registrationModel>();
-                return View("mainPage");
+                UserViewModel uvm = new UserViewModel(); // uvm - user view model
+                List<registrationModel> loginM = dal.Registration.ToList<registrationModel>();
+                foreach(registrationModel regModel in loginM)
+                    if(log.Username.Equals(regModel.Username) && log.UserPassword == regModel.UserPassword)
+                        return View("mainPage");
             }
             return View("login");
         }

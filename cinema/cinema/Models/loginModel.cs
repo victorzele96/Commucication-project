@@ -10,9 +10,9 @@ namespace cinema.Models
     {
         [Key]
         [RegularExpression("^[a-zA-Z0-9]+$", ErrorMessage = "The Username contain only digits and letters.")]
-        public String Username { get; }
+        public String Username { get; set; }
 
         [RegularExpression("^[a-zA-Z0-9]+$", ErrorMessage = "The Password contain only digits and letters.")]
-        public String UserPassword { get; }
+        public String UserPassword { get; set; }
     }
 }
