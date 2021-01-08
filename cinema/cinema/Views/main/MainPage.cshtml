@@ -19,15 +19,23 @@
     <!--navigation------------>
     <nav>
         <!--logo-------------->
-        <a href="#" class="logo">
+        <a href="~/main" class="logo">
             <img src="~/image/cinema-logo-1.png">
         </a>
+
+        <!--welcome Guset-->
+        <p style="color:wheat;">Welcome @ViewBag.name</p>
+
         <!--menu--------------->
         <ul class="menu">
             <li>  @Html.ActionLink("Home", "MainPage")  </li>
             <li>  @Html.ActionLink("registration", "registration")  </li>
             <li>  @Html.ActionLink("Login", "login")  </li>
             <li>  @Html.ActionLink("About us", "about")  </li>
+            <li>@if (ViewBag.name == "Victor" || ViewBag.name == "victor" || ViewBag.name == "Arie" || ViewBag.name == "arie")
+            {
+                @Html.ActionLink("Edit", "edit")
+            }</li>
         </ul>
         <!--search------------->
         <div class="search">
