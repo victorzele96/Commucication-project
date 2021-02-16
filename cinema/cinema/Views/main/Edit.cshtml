@@ -8,20 +8,34 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <script src="~/Scripts/jquery-3.3.1.js"></script>
     <link href="~/css/editStyle.css" rel="stylesheet" />
-    <title>Edit</title>
+    <title>Choose Action</title>
 </head>
 <body>
-    <div class="w3ls-bot">
-        <div class="switch-agileits">
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-                Swip right to save left to delete 
-            </label>
-        </div>
-        <div class="clearfix"></div>
+    <div class="Title">
+        <p>Choose Action</p>
     </div>
+
+    <div>
+        <div class="box1">
+            <a href="~/main/addMovie" class="btn btn-white btn-animation-1">   Add Movie   </a>
+        </div>
+
+        <div class="box2">
+            <a href="~/main/updateMovie" class="btn btn-white btn-animation-1">Update Movie</a>
+        </div>
+
+        <div class="box3">
+            <a style="margin-bottom: 0px" href="~/main/removeMovie" class="btn btn-white btn-animation-1">Remove Movie</a>
+
+        </div>
+        <div class="box2">
+            <a style="margin-top: 400px" class="btn btn-white btn-animation-1" href="~/main/MainPage">Return</a>
+
+        </div>
+    </div>
+
+ 
+
 </body>
 </html>

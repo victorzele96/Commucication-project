@@ -1,0 +1,160 @@
+﻿@model cinema.ViewModel.ProductViewModel
+@using cinema.Models
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <link href="~/css/updateMovieStyle.css" rel="stylesheet" />
+    <title>Update Movie</title>
+
+    <script>
+        function myFunction() {
+            var value = document.getElementById("movies-list");
+            if (value.selectedIndex % 11 == 1) {
+                document.getElementById("ProductId").value = value.options[value.selectedIndex].value;
+                document.getElementById("MovieNameId").value = value.options[value.selectedIndex + 1].value;
+                document.getElementById("MovieDicriptionId").value = value.options[value.selectedIndex + 2].value;
+                document.getElementById("MovieGenreId").value = value.options[value.selectedIndex + 3].value;
+                document.getElementById("MovieAgeLimitId").value = value.options[value.selectedIndex + 4].value;
+                document.getElementById("RelaseYearId").value = value.options[value.selectedIndex + 5].value;
+                document.getElementById("MovieImgId").value = value.options[value.selectedIndex + 6].value;
+                document.getElementById("MoviePriceId").value = value.options[value.selectedIndex + 7].value;
+                document.getElementById("HallNumId").value = value.options[value.selectedIndex + 8].value;
+                document.getElementById("SeatsNumId").value = value.options[value.selectedIndex + 9].value;
+                document.getElementById("MovieDayPlayId").value = value.options[value.selectedIndex + 10].value;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="Title">
+        <p>Update Movie</p>
+    </div>
+
+    <label for="movies">Select Movie <b>Number</b> :</label>
+    <select name="movies" id="movies-list">
+        <option value="Defualt">___________</option>
+
+        <!--for each movie fill option(combobox)-->
+        @foreach (ProductModel obj in Model.productModelList)
+        {
+        <optgroup label="@obj.MovieName">
+            <option value="@obj.ProductId">Movie Number: @obj.ProductId</option>
+            <option value="@obj.MovieName">Movie Name:   @obj.MovieName</option>
+            <option value="@obj.MovieDescription">Movie Description: @obj.MovieDescription</option>
+            <option value="@obj.MovieGenre">Movie Genre: @obj.MovieGenre</option>
+            <option value="@obj.MovieAgeLimit">Movie Age Limit: @obj.MovieAgeLimit</option>
+            <option value="@obj.RelaseYear">Relase Year: @obj.RelaseYear</option>
+            <option value="@obj.MovieImg">Movie Image Name: @obj.MovieImg</option>
+            <option value="@obj.MoviePrice">Movie Price: @obj.MoviePrice</option>
+            <option value="@obj.HallNum">Hall Number: @obj.HallNum</option>
+            <option value="@obj.SeatsNum">Seates Number: @obj.SeatsNum</option>
+            <option value="@obj.MovieDayPlay">Movie Day Play: @obj.MovieDayPlay</option>
+        </optgroup>
+        }
+        </select>
+    <br><br>
+
+    <button onclick="myFunction()">Choose</button>
+
+    <!--data that used to be changed -->
+    <form action="updateMovieDetails" method="post" id="updateAction">
+        <!--updateMovieDetails-->
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="ProductId" id="ProductId" type="number" value="" placeholder="Movie Id" required /> @Html.ValidationMessageFor(x => x.productModel.ProductId)
+                <p id="message"></p>
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MovieName" readonly="readonly" id="MovieNameId" type="text" value="" placeholder="Movie Name" required /> @Html.ValidationMessageFor(x => x.productModel.MovieName)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MovieDescription" id="MovieDicriptionId" type="text" value="" placeholder="Movie Description" required /> @Html.ValidationMessageFor(x => x.productModel.MovieDescription)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MovieGenre" id="MovieGenreId" type="text" value="" placeholder="Movie Genre" required /> @Html.ValidationMessageFor(x => x.productModel.MovieGenre)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MovieAgeLimit" id="MovieAgeLimitId" type="number" value="" placeholder="Movie Age Limit" required /> @Html.ValidationMessageFor(x => x.productModel.MovieAgeLimit)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="RelaseYear" id="RelaseYearId" type="number" value="" placeholder="Relase Year" required /> @Html.ValidationMessageFor(x => x.productModel.RelaseYear)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MovieImg" id="MovieImgId" type="text" value="" placeholder="Movie Image" required /> @Html.ValidationMessageFor(x => x.productModel.MovieImg)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MoviePrice" id="MoviePriceId" type="number" value="" placeholder="Movie Price" required /> @Html.ValidationMessageFor(x => x.productModel.MoviePrice)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="HallNum" id="HallNumId" type="number" value="" placeholder="Hall Number" required /> @Html.ValidationMessageFor(x => x.productModel.HallNum)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="SeatsNum" id="SeatsNumId" type="number" value="" placeholder="Seats Numbers" required /> @Html.ValidationMessageFor(x => x.productModel.SeatsNum)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MovieDayPlay" id="MovieDayPlayId" type="text" value="" placeholder="Movie Date Play" required /> @Html.ValidationMessageFor(x => x.productModel.MovieDayPlay)
+            </div>
+        </div>
+
+        <div class="wthree-field">
+            <input id="updateForm" name="updateForm" type="submit" value="Update" onclick="Func"/>
+        </div>
+    </form>
+
+    <script>
+        function Func() {
+            alert("Movie Updated!")
+        }
+    </script>
+
+
+</body>
+</html>

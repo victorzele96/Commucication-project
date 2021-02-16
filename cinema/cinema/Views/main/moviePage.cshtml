@@ -1,0 +1,73 @@
+﻿@model cinema.ViewModel.ProductViewModel
+@using cinema.Models
+@{
+    ViewBag.Title = "moviePage";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/moviePageStyle.css" rel="stylesheet" />
+    <title>Movie</title>
+</head>
+<body>
+    <div class="photo">
+        <img src="~/image/movies/@Model.productModelList[0].MovieImg" style="height: 600px; width: 450px; margin: 100px; box-shadow: 2px 2px 30px #866767">
+    </div>
+    <div style="margin-top: -150px;">
+        <select style="margin-left: 740px; background: black; color: wheat;" name="selectDate" id="movieSelected">
+
+            @foreach (ProductModel ele in Model.productModelList)
+            {
+                <option value="@ele.MovieDayPlay">      Movie Day Play: @ele.MovieDayPlay       </option>
+
+            }
+        </select>
+    </div>
+
+    <input style="visibility: hidden;" id="some2" name="some" readonly="readonly" type="text" value="1">
+    <script>
+        function changeFunc() {
+            var selectBox = document.getElementById("movieSelected");
+            document.getElementById("some2").value = selectBox.options[selectBox.selectedIndex].value;
+        }
+    </script>
+
+    <div class="text-description" style="margin-left: 740px; margin-top: -450px;">
+        <input name="dis" id="dis" style="visibility: hidden;" value="@Model.productModelList[0].HallNum  @Model.productModelList[0].MovieDayPlay" />
+        <b style="font-size: 50px;">@Model.productModelList[0].MovieName    </b><br>
+        <p style="font-size: 30px;">
+            Genre: @Model.productModelList[0].MovieGenre<br>
+            Age: @Model.productModelList[0].MovieAgeLimit+<br>
+            Price: @Model.productModelList[0].MoviePrice$<br>
+            Description:
+        </p>
+        <p style="font-size: 25px; margin: 50px; margin-top: -20px;">
+            @Model.productModelList[0].MovieDescription
+        </p>
+    </div>
+    
+    @{ int Index(){
+            int val = 0;
+            if (Request.Form["some2"] != null)
+            {
+                val = Int32.Parse(Request.Form["some2"]);
+            }
+            return val;
+        }
+    }
+
+    <div class="box" style="margin-left: 500px; margin-top: 200px; ">
+        <a href="@Url.Action("seats", "main", new {MovieName = @Model.productModelList[0].MovieName,
+                                                   MovieImg = @Model.productModelList[0].MovieImg,
+                                                   MoviePrice = @Model.productModelList[0].MoviePrice,
+                                                   HallNum = @Model.productModelList[Index()].HallNum,
+                                                   SeatsNum = @Model.productModelList[Index()].SeatsNum,
+                                                   MovieDayPlay = @Model.productModelList[Index()].MovieDayPlay
+                                                    })" class="btn" style="color: wheat; background-color: #CF3230;">Get Tickets</a>
+    </div>
+
+</body>
+</html>

@@ -6,7 +6,7 @@ using System.Web;
 
 namespace cinema.Models
 {
-    public class registrationModel
+    public class RegistrationModel
     {
         [RegularExpression("^[a-zA-Z][a-zA-Z]*$", ErrorMessage = "The First Name contain only letters.")]
         public String FirstName { get; set; }

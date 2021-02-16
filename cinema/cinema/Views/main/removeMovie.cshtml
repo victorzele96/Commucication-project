@@ -1,0 +1,66 @@
+﻿@model cinema.ViewModel.ProductViewModel
+@using cinema.Models
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <link href="~/css/removeMovieStyle.css" rel="stylesheet" />
+    <title>Remove Movie</title>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("movies-list").value;
+            document.getElementById("demo").value = x;
+        }
+    </script>
+</head>
+<body>
+    <div class="Title">
+        <p>Remove Movie</p>
+    </div>
+
+
+    <label for="movies">Select Movie:</label>
+    <select name="movies" id="movies-list">
+        <option value="Defualt">___________</option>
+
+        <!--for each movie fill option(combobox)-->
+        @foreach (ProductModel obj in Model.productModelList)
+        {
+            <option value="@obj.MovieName">@obj.MovieName</option>
+        }
+
+    </select>
+    <br><br>
+
+        <button onclick="myFunction()">Choose</button>
+
+
+        <form action="deleteMovieFromDb" method="post">
+
+            <!--<p id="demo"></p>-->
+            <input id="demo" name="demo" readonly="readonly" type="text" value="Defualt">
+
+            <div class="wthree-field">
+                <input id="deleteForm" name="deleteForm" type="submit" value="Delete" onclick="Func()" />
+            </div>
+        </form>
+
+    <script>
+        function Func() {
+            alert("Movie Removed!")
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

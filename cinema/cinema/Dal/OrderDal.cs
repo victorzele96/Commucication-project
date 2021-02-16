@@ -14,6 +14,6 @@ namespace cinema.Dal
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<OrderModel>().ToTable("tblOrder");
         }
-        public DbSet<OrderModel> Registration { get; set; }
+        public DbSet<OrderModel> OrderData { get; set; }
     }
 }

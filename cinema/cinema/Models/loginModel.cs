@@ -6,7 +6,7 @@ using System.Web;
 
 namespace cinema.Models
 {
-    public class loginModel
+    public class LoginModel
     {
         [Key]
         [RegularExpression("^[a-zA-Z0-9]+$", ErrorMessage = "The Username contain only digits and letters.")]
@@ -14,5 +14,7 @@ namespace cinema.Models
 
         [RegularExpression("^[a-zA-Z0-9]+$", ErrorMessage = "The Password contain only digits and letters.")]
         public String UserPassword { get; set; }
+
+        public bool RememberMe { get; internal set; }
     }
 }

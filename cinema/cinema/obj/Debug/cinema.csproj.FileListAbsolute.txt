@@ -1,80 +1,85 @@
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\cinema.dll.config
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\cinema.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\cinema.pdb
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\csc.exe
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\csc.exe.config
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\csc.rsp
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\csi.exe
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\csi.exe.config
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\csi.rsp
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.AppContext.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Console.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.IO.Compression.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.IO.Pipes.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Security.Claims.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.ValueTuple.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Xml.XPath.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\vbc.exe
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\vbc.exe.config
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\vbc.rsp
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\VBCSCompiler.exe
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\Antlr3.Runtime.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\Newtonsoft.Json.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.Helpers.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.Mvc.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.Optimization.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.Razor.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.WebPages.Deployment.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.WebPages.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.WebPages.Razor.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\WebGrease.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.Helpers.xml
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.Mvc.xml
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.Optimization.xml
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.Razor.xml
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.WebPages.xml
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.WebPages.Deployment.xml
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\System.Web.WebPages.Razor.xml
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\Newtonsoft.Json.xml
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\Antlr3.Runtime.pdb
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\obj\Debug\cinema.csprojAssemblyReference.cache
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\obj\Debug\cinema.csproj.CoreCompileInputs.cache
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\obj\Debug\cinema.csproj.CopyComplete
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\obj\Debug\cinema.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\obj\Debug\cinema.pdb
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\EntityFramework.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\EntityFramework.SqlServer.dll
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\EntityFramework.xml
-C:\Users\npuli\Desktop\Projects\Commucication project\cinema\cinema\bin\EntityFramework.SqlServer.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\cinema.dll.config
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\cinema.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\cinema.pdb
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\csc.exe
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\csc.exe.config
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\csc.rsp
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\csi.exe
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\csi.exe.config
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\csi.rsp
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.AppContext.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Console.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.IO.Compression.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.IO.Pipes.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Security.Claims.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.ValueTuple.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Xml.XPath.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\vbc.exe
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\vbc.exe.config
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\vbc.rsp
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\VBCSCompiler.exe
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\Antlr3.Runtime.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\EntityFramework.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\EntityFramework.SqlServer.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\Newtonsoft.Json.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.Helpers.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.Mvc.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.Optimization.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.Razor.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.WebPages.Deployment.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.WebPages.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.WebPages.Razor.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\WebGrease.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\EntityFramework.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\EntityFramework.SqlServer.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.Helpers.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.Mvc.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.Optimization.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.Razor.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.WebPages.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.WebPages.Deployment.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\System.Web.WebPages.Razor.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\Newtonsoft.Json.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\Antlr3.Runtime.pdb
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\obj\Debug\cinema.csprojAssemblyReference.cache
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\obj\Debug\cinema.csproj.CoreCompileInputs.cache
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\obj\Debug\cinema.csproj.CopyComplete
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\obj\Debug\cinema.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\obj\Debug\cinema.pdb
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\WebMatrix.Data.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\WebMatrix.WebData.dll
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\WebMatrix.Data.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\WebMatrix.WebData.xml
+C:\Users\npuli\Desktop\SCE\third year\first semester\מבוא לתקשורת\פרוייקט\cinema\cinema\bin\Microsoft.Web.Helpers.dll

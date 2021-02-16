@@ -1,0 +1,50 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    background: url(../image/Cinema-popcorn-1.png)no-repeat center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.Title {
+    color: wheat;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+form .field-group .wthree-field {
+    flex: 3 50%;
+    -webkit-box-flex: 3 50%; /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 3 50%; /* OLD - Firefox 19- */
+    -webkit-flex: 3 50%; /* Chrome */
+    -ms-flex: 3 50%; /* IE 10 */
+}
+
+.wthree-field input[type="submit"] {
+    background: #03A9F4;
+    border: none;
+    color: #fff;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    margin-bottom: 0.3em;
+}
+
+    .wthree-field input[type="submit"]:hover {
+        background: #222;
+        color: #fff;
+    }

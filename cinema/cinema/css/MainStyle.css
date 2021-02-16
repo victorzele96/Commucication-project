@@ -50,18 +50,16 @@ nav .menu li a {
     letter-spacing: 1px;
 }
 .search {
-    width: 250px;
-    height: 40px;
+
     background-color: rgba(245, 245, 245, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    padding: 0px 20px;
+
 }
 .search input {
-    width: 100%;
-    height: 30px;
+
     border: none;
     outline: none;
     background-color: transparent;

@@ -1,21 +1,32 @@
-﻿<!doctype html>
+﻿@model cinema.ViewModel.ProductViewModel
+@using cinema.Models
+
+<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
     <title> Cyber Cinema </title>
-<!--css files-->
-<link rel=" stylesheet" href="~/css/MainStyle.css">
-<link href="~/css/lightslider.css" rel="stylesheet" />
-<!--js files-->
-<script src="~/js/JQuery3.3.1.js"></script>
-<script src="~/js/lightslider.js"></script>
-<!-- fav icon-->
-<link rel=" shortcut icon" href="~/image/images/fav-icon.png">
-<!--using FontAwesome--------->
-<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!--css files-->
+    <link rel=" stylesheet" href="~/css/MainStyle.css">
+    <link href="~/css/lightslider.css" rel="stylesheet" />
+    <!--js files-->
+    <script src="~/js/JQuery3.3.1.js"></script>
+    <script src="~/js/lightslider.js"></script>
+    <!-- fav icon-->
+    <link rel=" shortcut icon" href="~/image/movies/fav-icon.png">
+    <!--using FontAwesome--------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+    <script>
+        function updatePrice(value)
+        {
+            document.getElementById('textinput').value = value + '$';
+        }
+    </script>
 </head>
 
 <body>
+
     <!--navigation------------>
     <nav>
         <!--logo-------------->
@@ -23,29 +34,99 @@
             <img src="~/image/cinema-logo-1.png">
         </a>
 
-        <!--welcome Guset-->
-        <p style="color:wheat;">Welcome @ViewBag.name</p>
+        @if (@WebSecurity.IsAuthenticated)
+        {
+            <!--welcome User-->
+            <p style="color:wheat;">Welcome @WebSecurity.CurrentUserName</p>
+        }
+        else
+        {
+            <!--welcome Guest-->
+            <p style="color:wheat;">Welcome Guest</p>
+        }
+
 
         <!--menu--------------->
         <ul class="menu">
+            <li>
+                @if (Roles.IsUserInRole("Admin"))
+                {@Html.ActionLink("Edit", "edit")}
+            </li>
             <li>  @Html.ActionLink("Home", "MainPage")  </li>
-            <li>  @Html.ActionLink("registration", "registration")  </li>
-            <li>  @Html.ActionLink("Login", "login")  </li>
-            <li>  @Html.ActionLink("About us", "about")  </li>
-            <li>@if (ViewBag.name == "Victor" || ViewBag.name == "victor" || ViewBag.name == "Arie" || ViewBag.name == "arie")
+            @if (!@WebSecurity.IsAuthenticated)
             {
-                @Html.ActionLink("Edit", "edit")
-            }</li>
+                <li>  @Html.ActionLink("registration", "registration")  </li>
+                <li>  @Html.ActionLink("Login", "login")  </li>
+            }
+            else
+            {
+                <li>  @Html.ActionLink("Logout", "logout")  </li>
+            }
+
+            <li>  @Html.ActionLink("About us", "about")  </li>
+            <li>  <a href="@Url.Action("MainPage", "main", new {sortBy = "price increase"  })" class="btn">Price Increase</a> </li>
+            <li>  <a href="@Url.Action("MainPage", "main", new {sortBy = "price decrease"  })" class="btn">Price Decrease</a> </li>
+            <li>  <a href="@Url.Action("MainPage", "main", new {sortBy = "18+"  })" class="btn">18+</a>                       </li>
+            <li>  <a href="@Url.Action("MainPage", "main", new {sortBy = "most popular"  })" class="btn">Most Popular</a>     </li>
+            <!--<li>  <a href="Url.Action("MainPage", "main", new {sortBy = "category"  })" class="btn">Category</a>             </li>-->
+            <li>  <p style="color: wheat; margin-left: 50px;">Price Range:</p>                                                </li>
+            <li>  <input class="range" onchange="updatePrice(this.value)" name="range" style="margin-top: 18px;" type="range" min="45" max="150" value="90">     </li>
+            <li>
+                <form action="@Url.Action("MainPage", "main", new {sortBy = "price range"})" method="post">
+                    <input type="text" readonly="readonly" name="priceRange" id="textinput" value="90$" style="background-color: black; color: wheat; width: 20%; border: none;">
+                    <div class="wthree-field">
+                        <input style="color: wheat; background: black; border: none; font-size: 15px;" id="updateForm1" name="updateForm1" type="submit" value="Seach by price" />
+                    </div>
+                </form>
+                <form action="@Url.Action("MainPage", "main", new {sortBy = "category"})" method="post">
+                    <select style="margin-left: -150px; background: black; color: wheat;" name="selectGenre" id="genre" onchange="changeFunc();">
+                        <option value="Category">           Category</option>
+                        <option value="Absurdist">          Absurdist</option>
+                        <option value="Action">             Action</option>
+                        <option value="Adventure">          Adventure</option>
+                        <option value="Animated">           Animated</option>
+                        <option value="Comedy">             Comedy</option>
+                        <option value="Crime">              Crime</option>
+                        <option value="Drama">              Drama</option>
+                        <option value="Fantasy">            Fantasy</option>
+                        <option value="Historical">         Historical</option>
+                        <option value="Historical">         Historical fiction</option>
+                        <option value="Horror">             Horror</option>
+                        <option value="Magical">            Magical realism</option>
+                        <option value="Mystery">            Mystery</option>
+                        <option value="Paranoid fiction">   Paranoid fiction</option>
+                        <option value="Philosophical">      Philosophical</option>
+                        <option value="Political">          Political</option>
+                        <option value="Romance">            Romance</option>
+                        <option value="Saga">               Saga</option>
+                        <option value="Satire">             Satire</option>
+                        <option value="Science fiction">    Science fiction</option>
+                        <option value="Social">             Social</option>
+                        <option value="Speculative">        Speculative</option>
+                        <option value="Thriller">           Thriller</option>
+                        <option value="Urban">              Urban</option>
+                        <option value="Western">            Western</option>
+                        <option value="Space-Opera">        Space Opera</option>
+                    </select>
+
+                    <input style="color: black; width: 0%; background: black; border: none;" id="some2" name="some" readonly="readonly" type="text" value="">
+                    <div style="margin-top: -15px;" class="wthree-field">
+                        <input style="color: wheat; background: black; border: none; font-size: 15px; margin-top: -100px;" id="updateForm2" name="updateForm2" type="submit" value="Seach by genre" />
+                    </div>
+                </form>
+            </li>
         </ul>
-        <!--search------------->
-        <div class="search">
-            <input type="text" placeholder="Find your Favourite Movies" />
-            <!--search icon------------->
-            <i class="fas fa-search"></i>
-        </div>
     </nav>
+
+    <script>
+        function changeFunc() {
+            var selectBox = document.getElementById("genre");
+            document.getElementById("some2").value = selectBox.options[selectBox.selectedIndex].value;
+        }
+    </script>
+
+    <!--showcase-->
     <section id="main">
-        <!--showcase-------------->
         <!--heading--------------->
         <h1 class="showcase-heading">Showcase</h1>
 
@@ -54,7 +135,7 @@
             <li class="item-a">
                 <!--showcase box---------->
                 <div class="showcase-box">
-                    <img src="~/image/images/s-1.jpg" />
+                    <img src="~/image/movies/s-1.jpg" />
                 </div>
             </li>
 
@@ -62,7 +143,7 @@
             <li class="item-b">
                 <!--showcase box---------->
                 <div class="showcase-box">
-                    <img src="~/image/images/s-2.jpg" />
+                    <img src="~/image/movies/s-2.jpg" />
                 </div>
             </li>
 
@@ -70,7 +151,7 @@
             <li class="item-c">
                 <!--showcase box---------->
                 <div class="showcase-box">
-                    <img src="~/image/images/s-3.jpg" />
+                    <img src="~/image/movies/s-3.jpg" />
                 </div>
             </li>
 
@@ -78,7 +159,7 @@
             <li class="item-d">
                 <!--showcase box---------->
                 <div class="showcase-box">
-                    <img src="~/image/images/s-4.jpg" />
+                    <img src="~/image/movies/s-4.jpg" />
                 </div>
             </li>
 
@@ -86,231 +167,40 @@
             <li class="item-e">
                 <!--showcase box---------->
                 <div class="showcase-box">
-                    <img src="~/image/images/s-5.png" />
-                </div>
-            </li>
-        </ul>
-    </section>
-    <!--latest movies-->
-    <section id="latest">
-        <h2 class="latest-heading">Latest Movies</h2>
-        <!--slider-------------->
-        <ul id="autoWidth2" class="cs-hidden">
-            <!--slide box 1----------------->
-            <li class="item-a">
-                <div class="latest-box">
-                    <!--img------------>
-                    <div class="latest-b-img">
-                        <img src="~/image/images/m-1.jpg" />
-                    </div>
-                    <!--text------------>
-                    <div class="latest-b-text">
-                        <strong>Kin 2018</strong>
-                        <p>Action Movie</p>
-                    </div>
-                </div>
-            </li>
-
-            <!--slide box 2----------------->
-            <li class="item-b">
-                <div class="latest-box">
-                    <!--img------------>
-                    <div class="latest-b-img">
-                        <img src="~/image/images/m-2.jpg" />
-                    </div>
-                    <!--text------------>
-                    <div class="latest-b-text">
-                        <strong>Peninsuela 2020</strong>
-                        <p>Action Movie</p>
-                    </div>
-                </div>
-            </li>
-
-            <!--slide box 3----------------->
-            <li class="item-c">
-                <div class="latest-box">
-                    <!--img------------>
-                    <div class="latest-b-img">
-                        <img src="~/image/images/m-3.jpg" />
-                    </div>
-                    <!--text------------>
-                    <div class="latest-b-text">
-                        <strong>Inception 2010</strong>
-                        <p>Action Movie</p>
-                    </div>
-                </div>
-            </li>
-
-            <!--slide box 4----------------->
-            <li class="item-d">
-                <div class="latest-box">
-                    <!--img------------>
-                    <div class="latest-b-img">
-                        <img src="~/image/images/m-4.jpg" />
-                    </div>
-                    <!--text------------>
-                    <div class="latest-b-text">
-                        <strong>Iron Man-3 2013</strong>
-                        <p>Action Movie</p>
-                    </div>
-                </div>
-            </li>
-
-            <!--slide box 5----------------->
-            <li class="item-e">
-                <div class="latest-box">
-                    <!--img------------>
-                    <div class="latest-b-img">
-                        <img src="~/image/images/m-5.jpg" />
-                    </div>
-                    <!--text------------>
-                    <div class="latest-b-text">
-                        <strong>Venom 2018</strong>
-                        <p>Action Movie</p>
-                    </div>
-                </div>
-            </li>
-
-            <!--slide box 6----------------->
-            <li class="item-f">
-                <div class="latest-box">
-                    <!--img------------>
-                    <div class="latest-b-img">
-                        <img src="~/image/images/m-6.jpg" />
-                    </div>
-                    <!--text------------>
-                    <div class="latest-b-text">
-                        <strong>Aquaman  2018</strong>
-                        <p>Action Movie</p>
-                    </div>
-                </div>
-            </li>
-
-            <!--slide box 7----------------->
-            <li class="item-g">
-                <div class="latest-box">
-                    <!--img------------>
-                    <div class="latest-b-img">
-                        <img src="~/image/images/m-7.jpeg" />
-                    </div>
-                    <!--text------------>
-                    <div class="latest-b-text">
-                        <strong>Jungle Cruise 2021</strong>
-                        <p>Action Movie</p>
-                    </div>
+                    <img src="~/image/movies/s-5.jpg" />
                 </div>
             </li>
         </ul>
     </section>
 
-    <!--movies---------------------------->
+
+
+
+    <!-----------movies------------------->
     <div class="movies-heading">
-        <h2>Movies</h2>
+        <h2>Movie Gallery</h2>
     </div>
+
     <section id="movies-list">
-        <!--box 1-------------->
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                <div class="quality">HDRip</div>
-                <img src="~/image/images/l-1.jpg" />
-            </div>
-            <!--text------------>
-            <a href="#">
-                Tin (2018) Full Movie[In English] With English Subtitles | HDRip 1080p HD
-            </a>
-        </div>
 
-        <!--box 2-------------->
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                <div class="quality">HDRip</div>
-                <img src="~/image/images/l-2.jpg" />
-            </div>
-            <!--text------------>
-            <a href="#">
-                Tin (2018) Full Movie[In English] With English Subtitles | HDRip 1080p HD
-            </a>
-        </div>
+        @foreach (ProductModel movie in Model.productModelList)
+        {
+            //----------box------->
+            <div class="movies-box">
 
-        <!--box 3-------------->
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                <div class="quality">HDRip</div>
-                <img src="~/image/images/l-3.jpg" />
-            </div>
-            <!--text------------>
-            <a href="#">
-                Tin (2018) Full Movie[In English] With English Subtitles | HDRip 1080p HD
-            </a>
-        </div>
+                <!--img------------>
+                <div class="movies-img">
+                    <div class="quality">HDRip</div>
+                    <img src="~/image/movies/@movie.MovieImg" />
+                </div>
 
-        <!--box 4-------------->
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                <div class="quality">HDRip</div>
-                <img src="~/image/images/l-4.jpg" />
+                <a href="@Url.Action("moviePage", "main", new {sortByMovie = @movie.MovieName})">
+                    <!--text------------>
+                    @movie.MovieName (@movie.RelaseYear)  | HDRip 1080p HD  |   Price: @movie.MoviePrice$ | @movie.MovieAgeLimit+
+                </a>
             </div>
-            <!--text------------>
-            <a href="#">
-                Tin (2018) Full Movie[In English] With English Subtitles | HDRip 1080p HD
-            </a>
-        </div>
+        }
 
-        <!--box 5-------------->
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                <div class="quality">HDRip</div>
-                <img src="~/image/images/l-5.jpg" />
-            </div>
-            <!--text------------>
-            <a href="#">
-                Tin (2018) Full Movie[In English] With English Subtitles | HDRip 1080p HD
-            </a>
-        </div>
-
-        <!--box 6-------------->
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                <div class="quality">HDRip</div>
-                <img src="~/image/images/l-6.jpg" />
-            </div>
-            <!--text------------>
-            <a href="#">
-                Tin (2018) Full Movie[In English] With English Subtitles | HDRip 1080p HD
-            </a>
-        </div>
-
-        <!--box 7-------------->
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                <div class="quality">HDRip</div>
-                <img src="~/image/images/l-7.jpg" />
-            </div>
-            <!--text------------>
-            <a href="#">
-                Tin (2018) Full Movie[In English] With English Subtitles | HDRip 1080p HD
-            </a>
-        </div>
-
-        <!--box 8-------------->
-        <div class="movies-box">
-            <!--img------------>
-            <div class="movies-img">
-                <div class="quality">HDRip</div>
-                <img src="~/image/images/l-8.jpg" />
-            </div>
-            <!--text------------>
-            <a href="#">
-                Tin (2018) Full Movie[In English] With English Subtitles | HDRip 1080p HD
-            </a>
-        </div>
     </section>
 
     <!--btns------------------>
@@ -328,11 +218,11 @@
     <!--slider script--------->
     <script>
         $(document).ready(function () {
-            $('#autoWidth,#autoWidth2').lightSlider({
+            $('#autoWidth').lightSlider({
                 autoWidth: true,
                 loop: true,
                 onSliderLoad: function () {
-                    $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+                    $('#autoWidth').removeClass('cS-hidden');
                 }
             });
         });

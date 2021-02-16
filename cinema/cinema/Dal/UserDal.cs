@@ -12,8 +12,8 @@ namespace cinema.Dal
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<registrationModel>().ToTable("tblUser");
+            modelBuilder.Entity<RegistrationModel>().ToTable("tblUser");
         }
-        public DbSet<registrationModel> Registration { get; set; }
+        public DbSet<RegistrationModel> Registration { get; set; }
     }
 }

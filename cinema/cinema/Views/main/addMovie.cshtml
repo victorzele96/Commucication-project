@@ -1,0 +1,110 @@
+﻿@model cinema.Models.ProductModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <link href="~/css/addMovieStyle.css" rel="stylesheet" />
+    <title>Edit</title>
+</head>
+<body>
+    <div class="Main-Title">
+        <p><b> Movie Editing </b></p>
+    </div>
+
+
+    <form action="saveMovieDetails" method="post" id="addAction">
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="ProductId" id="ProductId" type="number" value="" placeholder="Movie Id" required /> @Html.ValidationMessageFor(x => x.ProductId)
+                <p id="message"></p>
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MovieName" id="MovieNameId" type="text" value="" placeholder="Movie Name" required /> @Html.ValidationMessageFor(x => x.MovieName)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MovieDescription" id="MovieDicriptionId" type="text" value="" placeholder="Movie Description" required /> @Html.ValidationMessageFor(x => x.MovieDescription)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MovieGenre" id="MovieGenreId" type="text" value="" placeholder="Movie Genre" required /> @Html.ValidationMessageFor(x => x.MovieGenre)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MovieAgeLimit" id="MovieAgeLimitId" type="number" value="" placeholder="Movie Age Limit" required /> @Html.ValidationMessageFor(x => x.MovieAgeLimit)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="RelaseYear" id="RelaseYearId" type="number" value="" placeholder="Relase Year" required /> @Html.ValidationMessageFor(x => x.RelaseYear)
+            </div>
+        </div>
+
+        <div action="/action_page.php">
+            <label for="img">Select image:</label>
+            <input name="MovieImg" id="MovieImgId" type="file" value="" placeholder="Movie Image" required /> @Html.ValidationMessageFor(x => x.MovieImg)
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MoviePrice" id="MoviePriceId" type="number" value="" placeholder="Movie Price" required /> @Html.ValidationMessageFor(x => x.MoviePrice)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="HallNum" id="HallNumId" type="number" value="" placeholder="Hall Number" required /> @Html.ValidationMessageFor(x => x.HallNum)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="SeatsNum" id="SeatsNumId" type="number" value="10" placeholder="Seats Rows(In each row 12 seats.)" required /> @Html.ValidationMessageFor(x => x.SeatsNum)
+            </div>
+        </div>
+
+        <div class="field-group">
+            <span class="fa fa-first-name" aria-hidden="true"></span>
+            <div class="wthree-field">
+                <input name="MovieDayPlay" id="MovieDayPlayId" type="datetime-local" value="" placeholder="Movie Date Play" required /> @Html.ValidationMessageFor(x => x.MovieDayPlay)
+            </div>
+        </div>
+
+        <div class="wthree-field">
+            <input id="uploadForm" name="uploadForm" type="submit" value="Upload" onclick="Func()" />
+        </div>
+    </form>
+
+    <script>
+        function Func() {
+            alert("Created new Movie!")
+        }
+    </script>
+
+</body>
+</html>

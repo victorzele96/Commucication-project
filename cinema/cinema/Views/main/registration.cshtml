@@ -1,4 +1,4 @@
-﻿@model cinema.Models.registrationModel
+﻿@model cinema.Models.RegistrationModel
 @{
     Layout = null;
     ViewBag.Title = "registration";
@@ -33,7 +33,7 @@
                 <div class="field-group">
                     <span class="fa fa-first-name" aria-hidden="true"></span>
                     <div class="wthree-field">
-                        <input name="FirstName" id="FirstNameid" type="text" value="" placeholder="First Name" required/> @Html.ValidationMessageFor(x => x.FirstName)
+                        <input name="FirstName" id="FirstNameid" type="text" value="" placeholder="First Name" required /> @Html.ValidationMessageFor(x => x.FirstName)
                     </div>
                 </div>
                 
